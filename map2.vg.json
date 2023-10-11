@@ -1,0 +1,64 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 400,
+    "title": "Healthy life expectancy and social support",
+    "data": {
+    "url": "https://raw.githubusercontent.com/SimonaGomes19/FIT3179/main/2020_Happiness_Report.csv"
+    },
+    "mark": "circle",
+    "encoding": {
+    "x": {
+    "field": "Healthy life expectancy",
+    "type": "quantitative",
+    "title": "Healthy life expectancy"
+    },
+    "y": {
+    "field": "Social support",
+    "type": "quantitative"
+    },
+    "color": {
+    "field": "Ladder_score",
+    "type": "quantitative",
+    "title":"Happiness score",
+    "scale": {
+    "domain": [
+    "7",
+    "6",
+    "5",
+    "4",
+    "3",
+    "2"
+    ],
+    "range": [
+    "#253494",
+    "#225ea8",
+    "#2c7fb8",
+    "#41b6c4",
+    "#c7e9b4",
+    "#ffffcc"
+    ]
+    }
+    },
+    "opacity": {"value": 0.6},
+    "size": {
+    "field": "Freedom to make life choices",
+    "type": "quantitative",
+    "title":"Freedom to make life choices",
+    "scale": {
+    "type": "threshold",
+    "domain": [0.4, 0.5,0.6, 0.7, 0.8, 0.9],
+    "range": [25, 45, 100, 200, 300, 400]
+    },
+    "legend": {"format": ".1s"}
+    },
+    "tooltip": [
+    {"field": "Country", "type": "nominal"},
+    {"field": "Healthy life expectancy", "type": "quantitative", "format": ".2f"},
+    {"field": "Social support", "type": "quantitative", "format": ".2f"},
+    {"field": "Freedom to make life choices", "type": "quantitative", "format": ".2f"}
+    ]
+    }
+    }
+    
+    

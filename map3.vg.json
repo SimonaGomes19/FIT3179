@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Happiness index (2019 and 2020)",
+    "width": {"step": 25},
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/SimonaGomes19/FIT3179/main/map_bargraph.csv"
+    },
+    "repeat": {"layer": ["hs_2019", "hs_2020"]},
+    "spec": {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "y": {
+          "field": {"repeat": "layer"},
+          "type": "quantitative",
+          "title": "Happiness score"
+        },
+        "color": {"datum": {"repeat": "layer"}, "title": "Year","legend": {"labelExpr": "{'hs_2019': '2019', 'hs_2020': '2020'}[datum.label]"}
+        },
+        "xOffset": {"datum": {"repeat": "layer"}},
+         "tooltip": [
+      {"field":"Country","type":"nominal"},
+  {"field": "hs_2019","type": "quantitative", "title":"Happiness score in 2019", "format":".2f"},
+  {"field": "hs_2020", "type": "quantitative", "title": "Happiness score in 2020", "format":".2f"}
+  ]
+      }
+    }
+}

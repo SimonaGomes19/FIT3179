@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Healthy life expectancy",
+    "width": 800,
+  "height": 200,
+    "data": {"url": "https://raw.githubusercontent.com/SimonaGomes19/FIT3179/main/2020_Happiness_Report.csv"},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Ladder_score", "type": "quantitative","title":"Happiness score"},
+      "y": {"field": "Healthy life expectancy", "type": "quantitative"},
+      "color": {"field": "symbol", "type": "nominal"},
+    "tooltip": [
+      {"field":"Country","type":"nominal"},
+  {"field": "Healthy life expectancy", "type": "quantitative", "title":
+  "Healthy life expectancy", "format":".2f"},
+  {"field": "Ladder_score", "type": "quantitative", "title": "Happiness score", "format":".2f"}
+  ]
+  }
+  }
