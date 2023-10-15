@@ -1,11 +1,51 @@
-﻿Country_name,2023,2022,2021,2020,2019
-Finland,7.804,7.821,7.842,7.808,7.769
-Denmark,7.586,7.636,7.62,7.6455,7.6
-Iceland,7.53,7.557,7.554,7.5044,7.494
-Israel,7.473,7.384,7.157,7.1286,7.139
-Netherlands,7.403,7.415,7.464,7.4489,7.488
-Sweden,7.395,7.384,7.363,7.3534,7.343
-Norway,7.315,7.365,7.392,7.487,7.554
-Switzerland,7.24,7.512,7.571,7.5598,7.48
-Luxembourg,7.228,7.404,7.324,7.2375,7.09
-New Zealand,7.123,7.2,7.277,7.299,7.307
+﻿Country_name,year,score
+Finland,2023,7.804
+Denmark,2023,7.586
+Iceland,2023,7.53
+Israel,2023,7.473
+Netherlands,2023,7.403
+Sweden,2023,7.395
+Norway,2023,7.315
+Switzerland,2023,7.24
+Luxembourg,2023,7.228
+New Zealand,2023,7.123
+Finland,2022,7.821
+Denmark,2022,7.636
+Iceland,2022,7.557
+Israel,2022,7.384
+Netherlands,2022,7.415
+Sweden,2022,7.384
+Norway,2022,7.365
+Switzerland,2022,7.512
+Luxembourg,2022,7.404
+New Zealand,2022,7.2
+Finland,2021,7.842
+Denmark,2021,7.62
+Iceland,2021,7.554
+Israel,2021,7.157
+Netherlands,2021,7.464
+Sweden,2021,7.363
+Norway,2021,7.392
+Switzerland,2021,7.571
+Luxembourg,2021,7.324
+New Zealand,2021,7.277
+Finland,2020,7.808
+Denmark,2020,7.6455
+Iceland,2020,7.5044
+Israel,2020,7.1286
+Netherlands,2020,7.4489
+Sweden,2020,7.3534
+Norway,2020,7.487
+Switzerland,2020,7.5598
+Luxembourg,2020,7.2375
+New Zealand,2020,7.299
+Finland,2019,7.769
+Denmark,2019,7.6
+Iceland,2019,7.494
+Israel,2019,7.139
+Netherlands,2019,7.488
+Sweden,2019,7.343
+Norway,2019,7.554
+Switzerland,2019,7.48
+Luxembourg,2019,7.09
+New Zealand,2019,7.307
