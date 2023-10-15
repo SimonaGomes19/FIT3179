@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<script src="vega_lite_vis.js"></script>
+<script src="vega_lite_vis2_2.js"></script>
+<script src="vega_lite_vis2_3.js"></script>
+<script src="vega_lite_vis2_4.js"></script>
+<script src="vega_lite_vis2_5.js"></script>
+<title>"World Happiness Index" </title>
+<!-- Import pure.css -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="vega_lite_vis.js"></script>
-    <script src ="vega_lite_vis2.js"></script>
-    <script src="vega_lite_vis3.js"></script>
-    <title>World happiness index 2020</title>
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- CSS file -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<style>
+  .center-div{
+    display:flex;
+    justify-content:centre;
+    align-items:centre;
+    height:75vh;
+  }
+</style>
 </head>
+<centre>
 <body>
-    <h1>World happiness index 2020</h1>
-    <div id="bar_chart">
-    </div>
-    <h2>Comparing social support, healthy life expectancy and freedom to make life choices </h2>
-    <div id="bubble_chart">
-    </div>
-
-    <h2>Comparing healthy life expectancy and happiness score</h2>
-    <div id="stacked_bar_chart">
-    </div>
+<div class="introduction">
+  <h1 style="text-align: center">World Happiness Index</h1>
+  This visualisation is all about showcasing how happy and content people are in 
+  different countries. It looks at various factors like income, social support, life expectancy, 
+  freedom to make choices,generosity, corruption and dystopia levels to figure out the happiness levels of people in their respective country.
+</div>
+<hr>
+<div class="page">
+  <div class="section1">
+    <h2 style="text-align: center">World Happiness map</h2>
+    The countries with the highest happiness score are mostly in Europe and the countries with the least happiness scores are mostly located in Africa.
+  </div>
+    <div id="worldMap"></div>    
+        <br>
+  <div class="section1">
+    <h2 style="text-align: center">Top 20 countries with the highest happiness score</h2>
+  </div>
+        <div id="BarChart"></div>
+         <br>
+         <div class="section1">
+           <h2 style="text-align: center">Happiness score of the top 10 countries(2019-2023)</h2>
+           Finland has had the highest happiness index from 2019-2023. 
+           Switzerland has dropped its happiness score where as Israel has increased its happiness score. 
+         </div>
+               <div id="LineChart"></div>
+               <br>
+          <div class="section1">
+            <h2>The seven factors affecting the happiness score of the top 10 countries</h2>
+            Israel has the highest healthy life expectancy but is the lowest in generosity and freedom to make life choices.
+            Even though Finland has the highest happiness score, only its social support and freedom to make life choices is the highest among the seven factors.
+          </div>
+                <div id="StackedBar"></div>
+                
+ </div>
 </body>
+</centre>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
